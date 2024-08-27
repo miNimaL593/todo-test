@@ -5,10 +5,10 @@ const jwtToken = 'a56017bfd8f1a9d1c8d012e881ef7df90ddc4e3d74e61a27b82fa975cfe375
 
 // Функция baseQuery с авторизацией
 const baseQuery = fetchBaseQuery({
-	baseUrl: 'https://cms.dev-land.host/api/',
+	baseUrl: import.meta.env.VITE_SERVER_URL,
 	prepareHeaders: (headers) => {
 		if (jwtToken) {
-			headers.set('Authorization', `${jwtToken}`);
+			headers.set('Authorization', `${import.meta.env.VITE_JWT_TOKEN}`);
 		}
 		return headers;
 	},

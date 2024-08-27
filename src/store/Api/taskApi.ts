@@ -1,9 +1,9 @@
 import {createApi, fetchBaseQuery} from "@reduxjs/toolkit/query/react";
-import type {Task} from "../../../mocks/type.ts";
+import type {Task} from "../../mocks/type.ts";
 
 
-export const taskApiMocks = createApi({
-  reducerPath: 'taskApiMocks',
+export const taskApi = createApi({
+  reducerPath: 'taskApi',
   baseQuery: fetchBaseQuery({ baseUrl: '/api' }),
   endpoints: (builder) => ({
 
@@ -52,6 +52,6 @@ export const taskApiMocks = createApi({
   tagTypes: ['TASK'],
 });
 
-export const { useGetTasksQuery, useAddTaskMutation, useRemoveTaskMutation, useUpdateTaskMutation } = taskApiMocks;
+export const { useGetTasksQuery, useAddTaskMutation, useRemoveTaskMutation, useUpdateTaskMutation } = taskApi;
 
 

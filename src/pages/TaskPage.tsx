@@ -2,7 +2,7 @@ import {ConfigProvider, Divider, Radio, Skeleton} from "antd";
 import Locale from 'antd/locale/ru_RU';
 import {
   useGetTasksQuery,
-} from "../store/Api/MocksApi/taskApiMocks.ts";
+} from "../store/Api/taskApi.ts";
 import InfiniteScroll from "react-infinite-scroll-component";
 import { useCallback, useEffect, useState } from "react";
 import '../../styles/TaskList.scss'

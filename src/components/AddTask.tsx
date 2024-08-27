@@ -1,6 +1,6 @@
 import {FC, useState} from "react";
 import {Button, Input, message} from "antd";
-import {useAddTaskMutation} from "../store/Api/MocksApi/taskApiMocks.ts";
+import {useAddTaskMutation} from "../store/Api/taskApi.ts";
 
 const AddTask: FC = () => {
   const [isAdding, setIsAdding] = useState<boolean>(false)

@@ -1,4 +1,4 @@
-import './App.css'
+import '../styles/App.css'
 import {Layout} from "antd";
 import TaskList from "./pages/TaskPage.tsx";
 

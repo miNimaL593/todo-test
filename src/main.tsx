@@ -3,11 +3,10 @@ import ReactDOM from 'react-dom/client';
 import { BrowserRouter } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import App from './App.tsx';
-import './index.css';
 import {store} from "./store";
 
 async function enableMocking() {
-  if (process.env.NODE_ENV === 'development') {
+  if (import.meta.env.VITE_API_MODE === 'mock') {
     const { worker } = await import('./mocks/browser');
     await worker.start();
   }

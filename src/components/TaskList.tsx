@@ -2,7 +2,7 @@ import {FC} from "react";
 import {Task} from "../mocks/type.ts";
 import TaskItem from "./TaskItem.tsx";
 import {List, message} from "antd";
-import {useRemoveTaskMutation, useUpdateTaskMutation} from "../store/Api/MocksApi/taskApiMocks.ts";
+import {useRemoveTaskMutation, useUpdateTaskMutation} from "../store/Api/taskApi.ts";
 
 type TaskListProps = {
   tasks: Task[];
