@@ -1,12 +1,12 @@
-import {createApi, fetchBaseQuery} from "@reduxjs/toolkit/query/react";
+import {createApi} from "@reduxjs/toolkit/query/react";
 import type {Task} from "../../mocks/type.ts";
+import baseQuery from "./baseQuery.ts";
 
 
 export const taskApi = createApi({
   reducerPath: 'taskApi',
-  baseQuery: fetchBaseQuery({ baseUrl: '/api' }),
+  baseQuery: baseQuery,
   endpoints: (builder) => ({
-
     getTasks: builder.query<Task[], { limit: number; offset: number }>({
       query: ({ limit, offset }) => ({
         url: '/tasks',
