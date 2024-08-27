@@ -1,0 +1,81 @@
+.tasklist-main {
+  width: 1000px;
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  &__box {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__filters-box {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+    .ant-radio-group {
+      display: flex;
+      justify-content: space-between;
+      width: 45%;
+    }
+  }
+
+  &__add-task-box {
+    margin-bottom: 10px;
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+    align-items: center;
+
+
+    .ant-input {
+      width: 55%;
+    }
+  }
+
+  &__add-button-box {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .infinite-scroll-component__outerdiv {
+    width: 100%;
+  }
+
+  &__list-box {
+
+    &__item-box {
+      &__item {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding: 0 24px;
+        min-height: 40px;
+
+
+        &__title {
+          display: flex;
+          align-items: center;
+
+          &__input-box {
+            min-width: 300px;
+          }
+        }
+        &__icons-box {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          width: 15%;
+          &__icon {
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}
