@@ -1,5 +1,5 @@
 import {test, expect, describe, vi} from 'vitest'
-import TaskItem from "./TaskItem.tsx";
+import TaskItem from "../components/TaskItem.tsx";
 import {fireEvent, render, screen} from "@testing-library/react";
 
 describe("TaskItem testing", () => {
